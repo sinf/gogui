@@ -1,7 +1,7 @@
 #!/bin/sh
 
-PREFIX=/usr/local
-JAVA_HOME=/usr
+if [ -z $PREFIX ]; then PREFIX=~/.local; fi
+if [ -z $JAVA_HOME ]; then JAVA_HOME=/usr; fi
 
 usage() {
     printf "Usage: %s -j javahome [-p prefix] [-s sysconfdir]\n" $0
