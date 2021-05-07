@@ -198,7 +198,7 @@ option -Dquaqua.ignore=true.
 <target name="check" depends="docvalidate,junit"
  description="Run all tests"/>
 
-<target name="compile" depends="depend,version,doc">
+<target name="compile" depends="depend,version">
 <mkdir dir="build"/>
 <mkdir dir="build/classes"/>
 <javac srcdir="src" destdir="build/classes" source="1.8" target="1.8"
